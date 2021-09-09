@@ -1,0 +1,57 @@
+Script started on 2021-09-09 09:51:46+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="119" LINES="24"]
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ docker run -d devopsdockeruh/simple-web-service:alpine
+Unable to find image 'devopsdockeruh/simple-web-service:alpine' locally
+alpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[3A[2Kba3557a56b15: Downloading [>                                                  ]  29.31kB/2.812MB[3B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K1dace236434b: Downloading [>                                                  ]  52.48kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [===============>                                   ]  896.3kB/2.812MB[3B[3A[2Kba3557a56b15: Downloading [===========================================>       ]  2.448MB/2.812MB[3B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting [>                                                  ]  32.77kB/2.812MB[3B[2A[2K1dace236434b: Downloading [=>                                                 ]  105.9kB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [===============================================>   ]  2.687MB/2.812MB[3B[3A[2Kba3557a56b15: Extracting [==================================================>]  2.812MB/2.812MB[3B[3A[2Kba3557a56b15: Pull complete [3B[2A[2K1dace236434b: Downloading [===========>                                       ]   1.19MB/5.117MB[2B[2A[2K1dace236434b: Downloading [=========================>                         ]  2.624MB/5.117MB[2B[2A[2K1dace236434b: Downloading [======================================>            ]  3.918MB/5.117MB[2B[2A[2K1dace236434b: Downloading [=============================================>     ]  4.692MB/5.117MB[2B[2A[2K1dace236434b: Verifying Checksum [2B[2A[2K1dace236434b: Download complete [2B[2A[2K1dace236434b: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting [=======================================>           ]  4.063MB/5.117MB[2B[2A[2K1dace236434b: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+3752c532f14b7361c1ec894d2f690c8bb780eb8a45818a7893c3e0861b0d174f
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ docker cont[Ktainer ee[Kex[K[Kxec -it 
+hungry_hamilton   pedantic_mclaren  
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ docker container exec -it hungry_hamilton sh
+/usr/src/app # [6n/usr/src/app # [Jls
+[1;32mserver[m    [0;0mtext.log[m
+/usr/src/app # [6ncat text/usr/src/app # cat text.log [J
+2021-09-09 06:52:13 +0000 UTC
+2021-09-09 06:52:15 +0000 UTC
+2021-09-09 06:52:17 +0000 UTC
+2021-09-09 06:52:19 +0000 UTC
+2021-09-09 06:52:21 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-09-09 06:52:23 +0000 UTC
+2021-09-09 06:52:25 +0000 UTC
+2021-09-09 06:52:27 +0000 UTC
+2021-09-09 06:52:29 +0000 UTC
+2021-09-09 06:52:31 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-09-09 06:52:33 +0000 UTC
+2021-09-09 06:52:35 +0000 UTC
+2021-09-09 06:52:37 +0000 UTC
+2021-09-09 06:52:39 +0000 UTC
+2021-09-09 06:52:41 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-09-09 06:52:43 +0000 UTC
+2021-09-09 06:52:45 +0000 UTC
+2021-09-09 06:52:47 +0000 UTC
+2021-09-09 06:52:49 +0000 UTC
+2021-09-09 06:52:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-09-09 06:52:53 +0000 UTC
+2021-09-09 06:52:55 +0000 UTC
+2021-09-09 06:52:57 +0000 UTC
+2021-09-09 06:52:59 +0000 UTC
+2021-09-09 06:53:01 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-09-09 06:53:03 +0000 UTC
+2021-09-09 06:53:05 +0000 UTC
+/usr/src/app # [6nexit
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ docker ima ge[K[K[Kge ls[K[Ks
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   5 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   5 months ago   15.7MB
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ exit
+exit
+
+Script done on 2021-09-09 09:53:56+03:00 [COMMAND_EXIT_CODE="0"]
