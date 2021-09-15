@@ -1,0 +1,16 @@
+Script started on 2021-09-15 16:28:06+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="140" LINES="30"]
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ docker run -it curler
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ exit
+exit
+
+Script done on 2021-09-15 16:28:18+03:00 [COMMAND_EXIT_CODE="0"]

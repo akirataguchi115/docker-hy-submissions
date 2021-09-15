@@ -1,0 +1,8 @@
+# Start from the alpine image that is smaller but no fancy tools
+FROM ubuntu:18.04 
+
+COPY script.sh .
+
+RUN apt update && apt install curl -y
+
+CMD ./script.sh
