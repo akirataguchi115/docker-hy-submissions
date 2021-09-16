@@ -1,0 +1,17 @@
+Script started on 2021-09-16 10:13:42+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="55"]
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ t[Kexitcat text.log touch text.log && docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service[Aexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsexittouch text.log && docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ cat text.log 
+2021-09-16 07:13:49 +0000 UTC
+2021-09-16 07:13:51 +0000 UTC
+2021-09-16 07:13:53 +0000 UTC
+2021-09-16 07:13:55 +0000 UTC
+]0;taguchi@lx9-fuxi007: ~/docker-hy-submissions/part1[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/docker-hy-submissions/part1[00m$ exit
+exit
+
+Script done on 2021-09-16 10:14:01+03:00 [COMMAND_EXIT_CODE="0"]
