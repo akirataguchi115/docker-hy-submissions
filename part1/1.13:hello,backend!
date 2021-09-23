@@ -1,0 +1,81 @@
+Script started on 2021-09-23 13:33:25+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="101" LINES="55"]
+]0;taguchi@lx9-fuxi007: ~/material-applications/example-backend[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/material-applications/example-backend[00m$ cat Dockerfile 
+FROM golang:1.16-alpine 
+
+EXPOSE 8080
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN go build
+
+CMD ["./server"]
+]0;taguchi@lx9-fuxi007: ~/material-applications/example-backend[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/material-applications/example-backend[00m$ cat Dockerfile ls[Kcd example-frontend/[6Pat .gitignore[9Pls -a[Kcd ..git statusmv 1.12\:hello\,frontend\! Dockerfilels[Kmv 1.12\:hello\,frontend\! Dockerfilels[Kcd ~/material-applications/example-frontend/[A]0;taguchi@lx9-fuxi007: ~/material-applications/example-backend[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/material-applications/example-backend[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv 1.12\:hello\,frontend\! Dockerfile[K[K[Kdocker build .t [K[K -t ea[Kxample-backend && doc ker run -p 8080:8080 example-backend
+Sending build context to Docker daemon  43.01kB
+Step 1/6 : FROM golang:1.16-alpine
+ ---> df1795ddbf41
+Step 2/6 : EXPOSE 8080
+ ---> Using cache
+ ---> efeccafd063e
+Step 3/6 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> bf01ea170267
+Step 4/6 : COPY . .
+ ---> a3ab5025b831
+Step 5/6 : RUN go build
+ ---> Running in e6123d0b1325
+[91mgo: downloading github.com/gin-contrib/cors v1.3.1
+go: downloading github.com/gin-gonic/gin v1.6.3
+go: downloading github.com/go-pg/pg/v10 v10.7.3
+[0m[91mgo: downloading github.com/go-redis/redis/v8 v8.4.2
+[0m[91mgo: downloading github.com/gin-contrib/sse v0.1.0
+[0m[91mgo: downloading github.com/mattn/go-isatty v0.0.12
+[0m[91mgo: downloading github.com/golang/protobuf v1.4.3
+[0m[91mgo: downloading github.com/ugorji/go v1.1.7
+[0m[91mgo: downloading gopkg.in/yaml.v2 v2.3.0
+[0m[91mgo: downloading github.com/go-playground/validator/v10 v10.2.0
+[0m[91mgo: downloading github.com/cespare/xxhash/v2 v2.1.1
+[0m[91mgo: downloading github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+[0m[91mgo: downloading github.com/ugorji/go/codec v1.1.7
+[0m[91mgo: downloading go.opentelemetry.io/otel v0.14.0
+[0m[91mgo: downloading mellium.im/sasl v0.2.1
+[0m[91mgo: downloading github.com/go-pg/zerochecker v0.2.0
+[0m[91mgo: downloading github.com/jinzhu/inflection v1.0.0
+[0m[91mgo: downloading github.com/vmihailenco/msgpack/v5 v5.0.0
+[0m[91mgo: downloading github.com/vmihailenco/tagparser v0.1.2
+[0m[91mgo: downloading golang.org/x/sys v0.0.0-20201119102817-f84b799fce68
+[0m[91mgo: downloading github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc
+go: downloading github.com/vmihailenco/bufpool v0.1.11
+[0m[91mgo: downloading golang.org/x/crypto v0.0.0-20201117144127-c1f2f97bffc9
+[0m[91mgo: downloading google.golang.org/protobuf v1.25.0
+[0m[91mgo: downloading github.com/go-playground/universal-translator v0.17.0
+[0m[91mgo: downloading github.com/leodido/go-urn v1.2.0
+[0m[91mgo: downloading github.com/go-playground/locales v0.13.0
+[0mRemoving intermediate container e6123d0b1325
+ ---> 96f307a2023c
+Step 6/6 : CMD ["./server"]
+ ---> Running in fddaf75e440a
+Removing intermediate container fddaf75e440a
+ ---> c95fa930b0d6
+Successfully built c95fa930b0d6
+Successfully tagged example-backend:latest
+[Ex 2.4+] REDIS_HOST env was not passed so redis connection is not initialized
+[Ex 2.6+] POSTGRES_HOST env was not passed so postgres connection is not initialized
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+[GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+[GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2021/09/23 - 10:34:20 | 200 |     160.375µs |      172.17.0.1 | GET      "/ping"
+[GIN] 2021/09/23 - 10:34:20 | 404 |      33.958µs |      172.17.0.1 | GET      "/favicon.ico"
+^C]0;taguchi@lx9-fuxi007: ~/material-applications/example-backend[01;32mtaguchi@lx9-fuxi007[00m:[01;34m~/material-applications/example-backend[00m$ exit
+exit
+
+Script done on 2021-09-23 13:34:30+03:00 [COMMAND_EXIT_CODE="2"]
