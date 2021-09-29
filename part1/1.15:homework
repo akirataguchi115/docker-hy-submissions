@@ -1,0 +1,12 @@
+#https://hub.docker.com/repository/docker/akiradock/pressf
+FROM ubuntu:18.04
+
+WORKDIR /usr/src/app
+
+RUN apt update && apt install -y maven
+
+COPY . .
+
+WORKDIR pressF
+
+CMD ["mvn", "test"]
