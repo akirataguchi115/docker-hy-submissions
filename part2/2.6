@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+    backend:
+      image: example-backend
+      environment:
+        - REDIS_HOST=redis
+        - POSTGRES_HOST=db_postgres
+      ports:
+      -  8080:8080 
+    frontend:
+      image: example-frontend
+      ports:
+      -  5000:5000
+    redis:
+      image: redis
+      ports:
+      -  6379:6379
+    db:
+      image: postgres:13.2-alpine
+      restart: unless-stopped
+      container_name: db_postgres
